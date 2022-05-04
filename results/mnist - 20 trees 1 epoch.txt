@@ -1,0 +1,326 @@
+MNIST: 20 trees
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Initial values:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    | 0.97659999 | 8.2187645  |      32         7          relu     |      31         5          tanh     |      42          tanh     |      84          tanh     |    80        adam    |
+   2    | 0.98259997 |  11.34378  |      47         7          relu     |      33         7          tanh     |     153          tanh     |     195        sigmoid    |    69        adam    |
+   3    | 0.97689998 | 13.734369  |      48         7          tanh     |      63         7          relu     |     130        sigmoid    |      54          relu     |    47        adam    |
+   4    | 0.96810001 | 14.984416  |      51         5          tanh     |      98         3          tanh     |      75          tanh     |      49        sigmoid    |    41        adam    |
+   5    |   0.1135   | 14.390589  |      65         5        sigmoid    |      10         7          tanh     |      73        sigmoid    |      44        sigmoid    |    39        SGD     |
+   6    |   0.6451   | 14.218721  |      96         3          tanh     |      4          5        sigmoid    |     116          relu     |      48          relu     |    49        SGD     |
+   7    |   0.9774   | 20.687532  |      4          3          tanh     |      39         7          relu     |      79          relu     |     196          tanh     |    26        adam    |
+   8    |   0.1135   | 20.109372  |      94         7        sigmoid    |      77         5        sigmoid    |      6           relu     |     168          relu     |    35        adam    |
+   9    |   0.1135   | 13.312498  |      20         5        sigmoid    |      32         5        sigmoid    |     112          relu     |      14        sigmoid    |    38        SGD     |
+   10   |0.098200001 | 11.656246  |      88         3        sigmoid    |      38         3          tanh     |     151          tanh     |     175        sigmoid    |    90        adam    |
+   11   |0.097400002 | 7.6562879  |      16         7          relu     |      94         3        sigmoid    |     179        sigmoid    |      4           tanh     |    92        SGD     |
+   12   |   0.1028   | 7.1093161  |      14         5        sigmoid    |      12         7        sigmoid    |     193          tanh     |     129          relu     |    91        SGD     |
+   13   | 0.96200001 | 8.7656822  |      29         7          tanh     |      43         7        sigmoid    |     124          relu     |     174          relu     |    91        adam    |
+   14   |   0.1136   | 13.703192  |      87         7          tanh     |      64         7          relu     |      34        sigmoid    |      42        sigmoid    |    63        SGD     |
+   15   |   0.1028   | 11.234248  |      51         7        sigmoid    |      10         7          tanh     |     103        sigmoid    |     169          tanh     |    58        adam    |
+   16   | 0.97670001 | 35.843811  |      8          3          tanh     |      64         7        sigmoid    |     130        sigmoid    |     159          relu     |    12        adam    |
+   17   | 0.42770001 | 9.4530663  |      29         7        sigmoid    |      37         7          tanh     |      8           tanh     |     135          tanh     |    66        SGD     |
+   18   | 0.97390002 | 15.484434  |      84         7          tanh     |      51         5        sigmoid    |     170          relu     |     173          relu     |    46        adam    |
+   19   | 0.48050001 | 15.734344  |      89         5          tanh     |      66         7        sigmoid    |     176          relu     |      4           tanh     |    48        SGD     |
+   20   |   0.1135   | 21.953129  |      32         3          relu     |      95         5        sigmoid    |     170        sigmoid    |      36        sigmoid    |    21        SGD     |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration: 1
+Time elapsed: 1232.7031700611115
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    | 0.97659999 | 8.2187645  |      32         7          relu     |      31         5          tanh     |      42          tanh     |      84          tanh     |    80        adam    |
+   2    | 0.98259997 |  11.34378  |      47         7          relu     |      33         7          tanh     |     153          tanh     |     195        sigmoid    |    69        adam    |
+   3    | 0.98269999 | 15.453067  |      72         3          tanh     |      62         5          relu     |     180          relu     |      31          relu     |    47        adam    |
+   4    | 0.96920002 | 14.312507  |      52         3          tanh     |      93         3          tanh     |      75          tanh     |      51        sigmoid    |    40        adam    |
+   5    | 0.19239999 |  11.31238  |      34         7          tanh     |      58         7          relu     |      77        sigmoid    |     141        sigmoid    |    48        SGD     |
+   6    | 0.92640001 | 13.531258  |      95         5          relu     |      4          5        sigmoid    |     155          tanh     |      4           relu     |    48        adam    |
+   7    |   0.9774   | 20.687532  |      4          3          tanh     |      39         7          relu     |      79          relu     |     196          tanh     |    26        adam    |
+   8    | 0.96270001 | 18.578252  |      86         7        sigmoid    |      84         5        sigmoid    |      51        sigmoid    |     155          relu     |    32        adam    |
+   9    | 0.66149998 |  9.609345  |      32         5          relu     |      4          5          relu     |     124          tanh     |      15        sigmoid    |    59        SGD     |
+   10   | 0.96780002 | 11.734346  |     100         3          relu     |      14         3          tanh     |     159          tanh     |     144        sigmoid    |    91        adam    |
+   11   | 0.79430002 | 9.2811878  |      43         3          tanh     |      90         3          relu     |     179          relu     |      8           tanh     |   100        SGD     |
+   12   | 0.19840001 | 11.437408  |      8          5        sigmoid    |      36         7        sigmoid    |     200          tanh     |     163        sigmoid    |    40        SGD     |
+   13   | 0.96210003 | 8.2188108  |      31         7          tanh     |      67         7        sigmoid    |      96          relu     |      31          tanh     |   100        adam    |
+   14   | 0.97960001 | 15.109401  |      72         5          tanh     |      66         7          relu     |     139          relu     |      37        sigmoid    |    54        adam    |
+   15   |   0.1135   |  12.70312  |      65         5        sigmoid    |      8          7          tanh     |     135        sigmoid    |     184          tanh     |    52        adam    |
+   16   | 0.97670001 | 35.843811  |      8          3          tanh     |      64         7        sigmoid    |     130        sigmoid    |     159          relu     |    12        adam    |
+   17   |   0.9102   | 10.968652  |      42         7        sigmoid    |      35         7          tanh     |      92          relu     |      73          tanh     |    70        adam    |
+   18   | 0.98159999 | 21.546877  |      72         7          tanh     |      65         5          relu     |     200          tanh     |     110          tanh     |    27        adam    |
+   19   | 0.53250003 | 19.390531  |     100         5          tanh     |      79         7        sigmoid    |     197          relu     |      4           tanh     |    47        SGD     |
+   20   | 0.15459999 | 14.374975  |      19         3          tanh     |      82         3        sigmoid    |     160        sigmoid    |      36          relu     |    35        SGD     |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration: 2
+Time elapsed: 2064.296889066696
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    |   0.9788   | 9.6562178  |      49         7          relu     |      55         5          tanh     |      51          relu     |      51          tanh     |    80        adam    |
+   2    | 0.98259997 |  11.34378  |      47         7          relu     |      33         7          tanh     |     153          tanh     |     195        sigmoid    |    69        adam    |
+   3    | 0.98269999 | 15.453067  |      72         3          tanh     |      62         5          relu     |     180          relu     |      31          relu     |    47        adam    |
+   4    | 0.98509997 | 15.984379  |      72         5          tanh     |     100         3          relu     |     163          tanh     |      37        sigmoid    |    42        adam    |
+   5    | 0.19239999 |  11.31238  |      34         7          tanh     |      58         7          relu     |      77        sigmoid    |     141        sigmoid    |    48        SGD     |
+   6    | 0.97359997 | 12.843748  |      96         5          relu     |      4          5          relu     |      91          tanh     |      62          relu     |    50        adam    |
+   7    |   0.9774   | 20.687532  |      4          3          tanh     |      39         7          relu     |      79          relu     |     196          tanh     |    26        adam    |
+   8    | 0.96270001 | 18.578252  |      86         7        sigmoid    |      84         5        sigmoid    |      51        sigmoid    |     155          relu     |    32        adam    |
+   9    | 0.66149998 |  9.609345  |      32         5          relu     |      4          5          relu     |     124          tanh     |      15        sigmoid    |    59        SGD     |
+   10   | 0.97539997 | 14.171851  |      96         3          tanh     |      69         5        sigmoid    |     190          tanh     |     154          relu     |    80        adam    |
+   11   | 0.79430002 | 9.2811878  |      43         3          tanh     |      90         3          relu     |     179          relu     |      8           tanh     |   100        SGD     |
+   12   | 0.19840001 | 11.437408  |      8          5        sigmoid    |      36         7        sigmoid    |     200          tanh     |     163        sigmoid    |    40        SGD     |
+   13   | 0.97240001 | 11.234381  |      64         7          tanh     |      84         7          relu     |      34          relu     |      32          relu     |   100        adam    |
+   14   | 0.98470002 | 18.812433  |      72         3          tanh     |      66         5          relu     |     182        sigmoid    |      77          relu     |    30        adam    |
+   15   | 0.97610003 | 12.000027  |      55         5          relu     |      8          5          tanh     |     100        sigmoid    |     200          tanh     |    53        adam    |
+   16   | 0.97670001 | 35.843811  |      8          3          tanh     |      64         7        sigmoid    |     130        sigmoid    |     159          relu     |    12        adam    |
+   17   | 0.93919998 | 8.6094558  |      19         7          relu     |      23         7          tanh     |      4           relu     |      85          tanh     |    77        adam    |
+   18   | 0.98159999 | 21.546877  |      72         7          tanh     |      65         5          relu     |     200          tanh     |     110          tanh     |    27        adam    |
+   19   | 0.97180003 |  19.31247  |     100         5          tanh     |      95         5        sigmoid    |     200        sigmoid    |      6           tanh     |    44        adam    |
+   20   |   0.8506   | 11.234376  |      19         7          tanh     |      37         5          tanh     |     171        sigmoid    |      58          tanh     |    47        SGD     |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration: 3
+Time elapsed: 2892.1094176769257
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    |   0.9788   | 9.6562178  |      49         7          relu     |      55         5          tanh     |      51          relu     |      51          tanh     |    80        adam    |
+   2    | 0.98259997 |  11.34378  |      47         7          relu     |      33         7          tanh     |     153          tanh     |     195        sigmoid    |    69        adam    |
+   3    | 0.98269999 | 15.453067  |      72         3          tanh     |      62         5          relu     |     180          relu     |      31          relu     |    47        adam    |
+   4    | 0.98509997 | 15.984379  |      72         5          tanh     |     100         3          relu     |     163          tanh     |      37        sigmoid    |    42        adam    |
+   5    | 0.97750002 | 15.453094  |      28         5          relu     |     100         7        sigmoid    |      72        sigmoid    |     115        sigmoid    |    36        adam    |
+   6    | 0.97869998 | 18.640655  |     100         7          tanh     |      52         5          relu     |     162          relu     |      57          tanh     |    38        adam    |
+   7    |   0.9774   | 20.687532  |      4          3          tanh     |      39         7          relu     |      79          relu     |     196          tanh     |    26        adam    |
+   8    |   0.9799   | 19.062354  |      84         7          tanh     |      74         5          relu     |      37        sigmoid    |      66          relu     |    37        adam    |
+   9    | 0.97729999 |  9.84376   |      28         5          relu     |      8          5          tanh     |     136          tanh     |     191        sigmoid    |    62        adam    |
+   10   | 0.98280001 | 13.625033  |      80         3          tanh     |      58         5          relu     |     194          tanh     |     111          relu     |    70        adam    |
+   11   | 0.98119998 | 8.8437474  |      53         5          tanh     |      25         3          relu     |     135          relu     |     197          tanh     |    80        adam    |
+   12   | 0.89109999 | 13.890628  |      4          3        sigmoid    |      4          7        sigmoid    |     200        sigmoid    |     194        sigmoid    |    38        adam    |
+   13   | 0.97589999 | 10.593746  |      52         7          relu     |      64         7          tanh     |      84          tanh     |     169        sigmoid    |    97        adam    |
+   14   | 0.98470002 | 18.812433  |      72         3          tanh     |      66         5          relu     |     182        sigmoid    |      77          relu     |    30        adam    |
+   15   |   0.9813   | 12.171904  |      62         7          relu     |      15         5          relu     |     149          relu     |     172          tanh     |    52        adam    |
+   16   |   0.9831   | 42.953253  |      4          5          tanh     |      54         3          relu     |     179        sigmoid    |      87          relu     |    10        adam    |
+   17   | 0.93919998 | 8.6094558  |      19         7          relu     |      23         7          tanh     |      4           relu     |      85          tanh     |    77        adam    |
+   18   | 0.98500001 | 17.984497  |      63         7          tanh     |      61         5          relu     |     195          relu     |     156          relu     |    31        adam    |
+   19   | 0.97649997 | 20.390655  |     100         5          tanh     |      60         7        sigmoid    |     169        sigmoid    |     147          tanh     |    38        adam    |
+   20   | 0.97589999 | 14.546871  |      34         7          tanh     |      18         3          tanh     |     173        sigmoid    |      79          tanh     |    39        adam    |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration: 4
+Time elapsed: 3882.2357008457184
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    |   0.9788   | 9.6562178  |      49         7          relu     |      55         5          tanh     |      51          relu     |      51          tanh     |    80        adam    |
+   2    | 0.98259997 |  11.34378  |      47         7          relu     |      33         7          tanh     |     153          tanh     |     195        sigmoid    |    69        adam    |
+   3    | 0.98269999 | 15.453067  |      72         3          tanh     |      62         5          relu     |     180          relu     |      31          relu     |    47        adam    |
+   4    | 0.98509997 | 15.984379  |      72         5          tanh     |     100         3          relu     |     163          tanh     |      37        sigmoid    |    42        adam    |
+C:\Users\Leandrei\anaconda3\lib\site-packages\sigfig\sigfig.py:585: UserWarning: warning: 8 significant figures requested from number with only 7 significant figures
+  warn("warning: %d significant figures requested from number with only %d significant figures" % (given['sigfigs'], len(num.map)))
+   5    | 0.98000002 |  16.15625  |      46         7          relu     |      64         7        sigmoid    |      70        sigmoid    |      71          relu     |    35        adam    |
+   6    |   0.9853   | 18.249971  |     100         7          relu     |      30         5          relu     |     170          relu     |      68          tanh     |    35        adam    |
+   7    |   0.9806   | 40.125089  |      48         3          relu     |      25         7        sigmoid    |      68          relu     |     116          tanh     |    10        adam    |
+   8    | 0.98210001 | 16.937405  |      81         7          tanh     |      67         3          relu     |     103        sigmoid    |      77          relu     |    36        adam    |
+   9    | 0.97729999 |  9.84376   |      28         5          relu     |      8          5          tanh     |     136          tanh     |     191        sigmoid    |    62        adam    |
+   10   | 0.98280001 | 13.625033  |      80         3          tanh     |      58         5          relu     |     194          tanh     |     111          relu     |    70        adam    |
+   11   | 0.98119998 | 8.8437474  |      53         5          tanh     |      25         3          relu     |     135          relu     |     197          tanh     |    80        adam    |
+   12   | 0.95279998 | 37.750024  |      9          3          relu     |      4          7        sigmoid    |     200        sigmoid    |     176        sigmoid    |    10        adam    |
+   13   |   0.9817   | 10.343751  |      54         7          relu     |      79         7          tanh     |      51          tanh     |     168        sigmoid    |   100        adam    |
+   14   | 0.98470002 | 18.812433  |      72         3          tanh     |      66         5          relu     |     182        sigmoid    |      77          relu     |    30        adam    |
+   15   |   0.9813   | 12.171904  |      62         7          relu     |      15         5          relu     |     149          relu     |     172          tanh     |    52        adam    |
+   16   | 0.98549998 | 42.515592  |      64         7          tanh     |      50         5          relu     |     174        sigmoid    |      50          relu     |    10        adam    |
+   17   | 0.95459998 | 11.671901  |      4          3          tanh     |      50         7          tanh     |      46          relu     |      88          relu     |    52        adam    |
+   18   | 0.98500001 | 17.984497  |      63         7          tanh     |      61         5          relu     |     195          relu     |     156          relu     |    31        adam    |
+   19   | 0.98150003 | 19.796873  |     100         5          tanh     |      68         5        sigmoid    |     200        sigmoid    |     162          tanh     |    41        adam    |
+   20   | 0.97589999 | 14.546871  |      34         7          tanh     |      18         3          tanh     |     173        sigmoid    |      79          tanh     |    39        adam    |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration: 5
+Time elapsed: 5119.673260688782
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    |   0.9817   |  9.656271  |      57         7          relu     |      60         5          tanh     |     137          relu     |      50          tanh     |   100        adam    |
+   2    | 0.98269999 | 17.484286  |      48         7          relu     |      39         7          tanh     |     123          relu     |     169        sigmoid    |    33        adam    |
+   3    | 0.98269999 | 15.453067  |      72         3          tanh     |      62         5          relu     |     180          relu     |      31          relu     |    47        adam    |
+   4    | 0.98509997 | 15.984379  |      72         5          tanh     |     100         3          relu     |     163          tanh     |      37        sigmoid    |    42        adam    |
+   5    | 0.98369998 | 18.000028  |      83         7          relu     |      61         5          relu     |     134        sigmoid    |     147          tanh     |    36        adam    |
+   6    |   0.9853   | 18.249971  |     100         7          relu     |      30         5          relu     |     170          relu     |      68          tanh     |    35        adam    |
+   7    |   0.9806   | 40.125089  |      48         3          relu     |      25         7        sigmoid    |      68          relu     |     116          tanh     |    10        adam    |
+   8    | 0.98689997 | 16.593809  |      69         7          relu     |      85         3          relu     |     115          relu     |      80          relu     |    36        adam    |
+   9    | 0.97729999 |  9.84376   |      28         5          relu     |      8          5          tanh     |     136          tanh     |     191        sigmoid    |    62        adam    |
+   10   | 0.98460001 |  13.04689  |      82         3          tanh     |      58         5          relu     |     181          tanh     |     101          relu     |    81        adam    |
+   11   | 0.98119998 | 8.8437474  |      53         5          tanh     |      25         3          relu     |     135          relu     |     197          tanh     |    80        adam    |
+   12   |   0.9799   | 41.499999  |      9          3          relu     |      14         7          relu     |     181          relu     |     200          relu     |    10        adam    |
+   13   |   0.9817   | 10.343751  |      54         7          relu     |      79         7          tanh     |      51          tanh     |     168        sigmoid    |   100        adam    |
+   14   | 0.98470002 | 18.812433  |      72         3          tanh     |      66         5          relu     |     182        sigmoid    |      77          relu     |    30        adam    |
+   15   |   0.9824   | 13.234405  |     100         7          relu     |      15         3          relu     |     174          relu     |     165          tanh     |    53        adam    |
+   16   | 0.98549998 | 42.515592  |      64         7          tanh     |      50         5          relu     |     174        sigmoid    |      50          relu     |    10        adam    |
+   17   | 0.96579999 | 12.984362  |      22         3          tanh     |      12         7          tanh     |      77        sigmoid    |     127          relu     |    42        adam    |
+   18   | 0.98500001 | 17.984497  |      63         7          tanh     |      61         5          relu     |     195          relu     |     156          relu     |    31        adam    |
+   19   | 0.98299998 | 22.500119  |     100         5          tanh     |      92         7          relu     |     175        sigmoid    |      75          tanh     |    39        adam    |
+   20   | 0.97589999 | 14.546871  |      34         7          tanh     |      18         3          tanh     |     173        sigmoid    |      79          tanh     |    39        adam    |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration: 6
+Time elapsed: 6314.423216581345
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    |   0.9817   |  9.656271  |      57         7          relu     |      60         5          tanh     |     137          relu     |      50          tanh     |   100        adam    |
+   2    | 0.98269999 | 17.484286  |      48         7          relu     |      39         7          tanh     |     123          relu     |     169        sigmoid    |    33        adam    |
+   3    | 0.98269999 | 15.453067  |      72         3          tanh     |      62         5          relu     |     180          relu     |      31          relu     |    47        adam    |
+   4    | 0.98509997 | 15.984379  |      72         5          tanh     |     100         3          relu     |     163          tanh     |      37        sigmoid    |    42        adam    |
+   5    | 0.98369998 | 18.000028  |      83         7          relu     |      61         5          relu     |     134        sigmoid    |     147          tanh     |    36        adam    |
+   6    |   0.9853   | 18.249971  |     100         7          relu     |      30         5          relu     |     170          relu     |      68          tanh     |    35        adam    |
+   7    | 0.98470002 | 23.921875  |      50         3          relu     |      23         7          relu     |      68          tanh     |     139          tanh     |    21        adam    |
+   8    | 0.98689997 | 16.593809  |      69         7          relu     |      85         3          relu     |     115          relu     |      80          relu     |    36        adam    |
+   9    | 0.97920001 | 13.203124  |      47         7          relu     |      11         3          tanh     |     127          tanh     |     138        sigmoid    |    43        adam    |
+   10   | 0.98460001 |  13.04689  |      82         3          tanh     |      58         5          relu     |     181          tanh     |     101          relu     |    81        adam    |
+   11   | 0.98119998 | 8.8437474  |      53         5          tanh     |      25         3          relu     |     135          relu     |     197          tanh     |    80        adam    |
+   12   |   0.9799   | 41.499999  |      9          3          relu     |      14         7          relu     |     181          relu     |     200          relu     |    10        adam    |
+   13   |   0.9817   | 10.343751  |      54         7          relu     |      79         7          tanh     |      51          tanh     |     168        sigmoid    |   100        adam    |
+   14   | 0.98470002 | 18.812433  |      72         3          tanh     |      66         5          relu     |     182        sigmoid    |      77          relu     |    30        adam    |
+   15   | 0.98509997 | 20.921877  |     100         7          relu     |      59         3          relu     |     157          relu     |     115          tanh     |    26        adam    |
+   16   | 0.98549998 | 42.515592  |      64         7          tanh     |      50         5          relu     |     174        sigmoid    |      50          relu     |    10        adam    |
+   17   | 0.97729999 | 15.531245  |      86         3          tanh     |      28         5          tanh     |      50        sigmoid    |     116          tanh     |    40        adam    |
+   18   | 0.98500001 | 17.984497  |      63         7          tanh     |      61         5          relu     |     195          relu     |     156          relu     |    31        adam    |
+   19   | 0.98299998 | 22.500119  |     100         5          tanh     |      92         7          relu     |     175        sigmoid    |      75          tanh     |    39        adam    |
+   20   | 0.97589999 | 14.546871  |      34         7          tanh     |      18         3          tanh     |     173        sigmoid    |      79          tanh     |    39        adam    |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration: 7
+Time elapsed: 7483.610699176788
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    |   0.9817   |  9.656271  |      57         7          relu     |      60         5          tanh     |     137          relu     |      50          tanh     |   100        adam    |
+   2    | 0.98269999 | 17.484286  |      48         7          relu     |      39         7          tanh     |     123          relu     |     169        sigmoid    |    33        adam    |
+   3    | 0.98339999 | 15.374883  |      98         3          tanh     |      63         3          relu     |     186          relu     |     106          tanh     |    55        adam    |
+   4    | 0.98509997 | 15.984379  |      72         5          tanh     |     100         3          relu     |     163          tanh     |      37        sigmoid    |    42        adam    |
+   5    | 0.98369998 | 18.000028  |      83         7          relu     |      61         5          relu     |     134        sigmoid    |     147          tanh     |    36        adam    |
+   6    |   0.9853   | 18.249971  |     100         7          relu     |      30         5          relu     |     170          relu     |      68          tanh     |    35        adam    |
+   7    | 0.98470002 | 23.921875  |      50         3          relu     |      23         7          relu     |      68          tanh     |     139          tanh     |    21        adam    |
+   8    | 0.98689997 | 16.593809  |      69         7          relu     |      85         3          relu     |     115          relu     |      80          relu     |    36        adam    |
+   9    | 0.97920001 | 13.203124  |      47         7          relu     |      11         3          tanh     |     127          tanh     |     138        sigmoid    |    43        adam    |
+   10   | 0.98460001 |  13.04689  |      82         3          tanh     |      58         5          relu     |     181          tanh     |     101          relu     |    81        adam    |
+   11   | 0.98119998 | 8.8437474  |      53         5          tanh     |      25         3          relu     |     135          relu     |     197          tanh     |    80        adam    |
+   12   |   0.9799   | 41.499999  |      9          3          relu     |      14         7          relu     |     181          relu     |     200          relu     |    10        adam    |
+   13   | 0.98250002 | 15.343612  |      51         7          relu     |      86         7          tanh     |      55          relu     |     168        sigmoid    |    42        adam    |
+   14   | 0.98470002 | 18.812433  |      72         3          tanh     |      66         5          relu     |     182        sigmoid    |      77          relu     |    30        adam    |
+   15   | 0.98509997 | 20.921877  |     100         7          relu     |      59         3          relu     |     157          relu     |     115          tanh     |    26        adam    |
+   16   | 0.98549998 | 42.515592  |      64         7          tanh     |      50         5          relu     |     174        sigmoid    |      50          relu     |    10        adam    |
+   17   | 0.97729999 | 15.531245  |      86         3          tanh     |      28         5          tanh     |      50        sigmoid    |     116          tanh     |    40        adam    |
+   18   | 0.98500001 | 17.984497  |      63         7          tanh     |      61         5          relu     |     195          relu     |     156          relu     |    31        adam    |
+   19   | 0.98299998 | 22.500119  |     100         5          tanh     |      92         7          relu     |     175        sigmoid    |      75          tanh     |    39        adam    |
+   20   | 0.97589999 | 14.546871  |      34         7          tanh     |      18         3          tanh     |     173        sigmoid    |      79          tanh     |    39        adam    |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration: 8
+Time elapsed: 8694.813852071762
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    |   0.9817   |  9.656271  |      57         7          relu     |      60         5          tanh     |     137          relu     |      50          tanh     |   100        adam    |
+   2    | 0.98320001 |  15.39062  |      47         7          relu     |      46         5          tanh     |     131          relu     |     182        sigmoid    |    32        adam    |
+   3    | 0.98339999 | 15.374883  |      98         3          tanh     |      63         3          relu     |     186          relu     |     106          tanh     |    55        adam    |
+   4    | 0.98509997 | 15.984379  |      72         5          tanh     |     100         3          relu     |     163          tanh     |      37        sigmoid    |    42        adam    |
+   5    |   0.9849   | 17.421905  |     100         5          relu     |      59         7          relu     |     134        sigmoid    |     162          tanh     |    65        adam    |
+   6    |   0.9853   | 18.249971  |     100         7          relu     |      30         5          relu     |     170          relu     |      68          tanh     |    35        adam    |
+   7    | 0.98470002 | 23.921875  |      50         3          relu     |      23         7          relu     |      68          tanh     |     139          tanh     |    21        adam    |
+   8    | 0.98689997 | 16.593809  |      69         7          relu     |      85         3          relu     |     115          relu     |      80          relu     |    36        adam    |
+   9    | 0.98119998 | 13.281219  |      43         7          relu     |      18         3          relu     |     154          tanh     |     146        sigmoid    |    42        adam    |
+   10   | 0.98460001 |  13.04689  |      82         3          tanh     |      58         5          relu     |     181          tanh     |     101          relu     |    81        adam    |
+   11   | 0.98119998 | 8.8437474  |      53         5          tanh     |      25         3          relu     |     135          relu     |     197          tanh     |    80        adam    |
+   12   | 0.98119998 | 41.796937  |      62         3          relu     |      4          7          relu     |     200          relu     |     200          relu     |    10        adam    |
+   13   | 0.98329997 | 18.531107  |      61         7          relu     |      79         7          relu     |      63          relu     |     172          relu     |    33        adam    |
+   14   | 0.98470002 | 18.812433  |      72         3          tanh     |      66         5          relu     |     182        sigmoid    |      77          relu     |    30        adam    |
+   15   | 0.98540002 | 21.078232  |      81         7          relu     |      43         5          relu     |      90          relu     |     140          tanh     |    26        adam    |
+   16   | 0.98549998 | 42.515592  |      64         7          tanh     |      50         5          relu     |     174        sigmoid    |      50          relu     |    10        adam    |
+   17   |   0.9777   | 29.843774  |      94         3          tanh     |      30         5          tanh     |      82        sigmoid    |     119          tanh     |    17        adam    |
+   18   | 0.98500001 | 17.984497  |      63         7          tanh     |      61         5          relu     |     195          relu     |     156          relu     |    31        adam    |
+   19   | 0.98509997 | 19.046968  |      60         5          tanh     |     100         5          relu     |     176          tanh     |      68          tanh     |    33        adam    |
+   20   | 0.97589999 | 14.546871  |      34         7          tanh     |      18         3          tanh     |     173        sigmoid    |      79          tanh     |    39        adam    |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration: 9
+Time elapsed: 9846.391949415207
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    |   0.9817   |  9.656271  |      57         7          relu     |      60         5          tanh     |     137          relu     |      50          tanh     |   100        adam    |
+   2    | 0.98559999 | 17.468672  |      49         7          relu     |      48         7          tanh     |     163          relu     |     186        sigmoid    |    33        adam    |
+   3    | 0.98339999 | 15.374883  |      98         3          tanh     |      63         3          relu     |     186          relu     |     106          tanh     |    55        adam    |
+   4    | 0.98509997 | 15.984379  |      72         5          tanh     |     100         3          relu     |     163          tanh     |      37        sigmoid    |    42        adam    |
+   5    |   0.9849   | 17.421905  |     100         5          relu     |      59         7          relu     |     134        sigmoid    |     162          tanh     |    65        adam    |
+   6    | 0.98610002 | 41.265654  |     100         7          relu     |      32         5          relu     |     169          tanh     |      74          tanh     |    10        adam    |
+   7    | 0.98470002 | 23.921875  |      50         3          relu     |      23         7          relu     |      68          tanh     |     139          tanh     |    21        adam    |
+   8    | 0.98689997 | 16.593809  |      69         7          relu     |      85         3          relu     |     115          relu     |      80          relu     |    36        adam    |
+   9    | 0.98119998 | 13.281219  |      43         7          relu     |      18         3          relu     |     154          tanh     |     146        sigmoid    |    42        adam    |
+   10   | 0.98460001 |  13.04689  |      82         3          tanh     |      58         5          relu     |     181          tanh     |     101          relu     |    81        adam    |
+   11   | 0.98189998 | 12.093755  |      57         5          tanh     |      16         5          relu     |     185          relu     |     197          relu     |    50        adam    |
+   12   | 0.98580003 | 43.484377  |      92         3          relu     |      25         7          relu     |     200          relu     |     200        sigmoid    |    10        adam    |
+   13   | 0.98540002 | 18.031312  |      54         7          relu     |      90         7          relu     |      92          relu     |     162          relu     |    35        adam    |
+   14   | 0.98470002 | 18.812433  |      72         3          tanh     |      66         5          relu     |     182        sigmoid    |      77          relu     |    30        adam    |
+   15   | 0.98540002 | 21.078232  |      81         7          relu     |      43         5          relu     |      90          relu     |     140          tanh     |    26        adam    |
+   16   | 0.98549998 | 42.515592  |      64         7          tanh     |      50         5          relu     |     174        sigmoid    |      50          relu     |    10        adam    |
+   17   |   0.9777   | 29.843774  |      94         3          tanh     |      30         5          tanh     |      82        sigmoid    |     119          tanh     |    17        adam    |
+   18   | 0.98500001 | 17.984497  |      63         7          tanh     |      61         5          relu     |     195          relu     |     156          relu     |    31        adam    |
+   19   | 0.98509997 | 19.046968  |      60         5          tanh     |     100         5          relu     |     176          tanh     |      68          tanh     |    33        adam    |
+   20   | 0.97589999 | 14.546871  |      34         7          tanh     |      18         3          tanh     |     173        sigmoid    |      79          tanh     |    39        adam    |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration: 10
+Time elapsed: 11062.110697507858
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    | 0.98589998 | 13.624938  |      53         7          relu     |      51         5          tanh     |     151          relu     |     151          tanh     |    46        adam    |
+   2    | 0.98559999 | 17.468672  |      49         7          relu     |      48         7          tanh     |     163          relu     |     186        sigmoid    |    33        adam    |
+   3    | 0.98339999 | 15.374883  |      98         3          tanh     |      63         3          relu     |     186          relu     |     106          tanh     |    55        adam    |
+   4    | 0.98509997 | 15.984379  |      72         5          tanh     |     100         3          relu     |     163          tanh     |      37        sigmoid    |    42        adam    |
+   5    |   0.9849   | 17.421905  |     100         5          relu     |      59         7          relu     |     134        sigmoid    |     162          tanh     |    65        adam    |
+   6    | 0.98610002 | 41.265654  |     100         7          relu     |      32         5          relu     |     169          tanh     |      74          tanh     |    10        adam    |
+   7    | 0.98470002 | 23.921875  |      50         3          relu     |      23         7          relu     |      68          tanh     |     139          tanh     |    21        adam    |
+   8    | 0.98689997 | 16.593809  |      69         7          relu     |      85         3          relu     |     115          relu     |      80          relu     |    36        adam    |
+   9    | 0.98119998 | 13.281219  |      43         7          relu     |      18         3          relu     |     154          tanh     |     146        sigmoid    |    42        adam    |
+   10   | 0.98460001 |  13.04689  |      82         3          tanh     |      58         5          relu     |     181          tanh     |     101          relu     |    81        adam    |
+   11   | 0.98189998 | 12.093755  |      57         5          tanh     |      16         5          relu     |     185          relu     |     197          relu     |    50        adam    |
+   12   | 0.98580003 | 43.484377  |      92         3          relu     |      25         7          relu     |     200          relu     |     200        sigmoid    |    10        adam    |
+   13   | 0.98540002 | 18.031312  |      54         7          relu     |      90         7          relu     |      92          relu     |     162          relu     |    35        adam    |
+   14   |   0.9849   | 25.390594  |      72         3          tanh     |      99         5          relu     |     200          tanh     |      82        sigmoid    |    23        adam    |
+   15   | 0.98540002 | 21.078232  |      81         7          relu     |      43         5          relu     |      90          relu     |     140          tanh     |    26        adam    |
+   16   | 0.98549998 | 42.515592  |      64         7          tanh     |      50         5          relu     |     174        sigmoid    |      50          relu     |    10        adam    |
+   17   |   0.9777   | 29.843774  |      94         3          tanh     |      30         5          tanh     |      82        sigmoid    |     119          tanh     |    17        adam    |
+   18   | 0.98500001 | 17.984497  |      63         7          tanh     |      61         5          relu     |     195          relu     |     156          relu     |    31        adam    |
+   19   | 0.98509997 | 19.046968  |      60         5          tanh     |     100         5          relu     |     176          tanh     |      68          tanh     |    33        adam    |
+   20   | 0.97589999 | 14.546871  |      34         7          tanh     |      18         3          tanh     |     173        sigmoid    |      79          tanh     |    39        adam    |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Train for 5 epochs:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    | 0.99019998 | 57.921873  |      53         7          relu     |      51         5          tanh     |     151          relu     |     151          tanh     |    46        adam    |
+   2    |   0.9932   | 76.156384  |      49         7          relu     |      48         7          tanh     |     163          relu     |     186        sigmoid    |    33        adam    |
+   3    | 0.98930001 |  64.35924  |      98         3          tanh     |      63         3          relu     |     186          relu     |     106          tanh     |    55        adam    |
+   4    |   0.9885   | 67.999972  |      72         5          tanh     |     100         3          relu     |     163          tanh     |      37        sigmoid    |    42        adam    |
+   5    | 0.98860002 |  73.50006  |     100         5          relu     |      59         7          relu     |     134        sigmoid    |     162          tanh     |    65        adam    |
+   6    | 0.99089998 | 202.82813  |     100         7          relu     |      32         5          relu     |     169          tanh     |      74          tanh     |    10        adam    |
+   7    | 0.98930001 | 113.24994  |      50         3          relu     |      23         7          relu     |      68          tanh     |     139          tanh     |    21        adam    |
+   8    | 0.99169999 | 71.687501  |      69         7          relu     |      85         3          relu     |     115          relu     |      80          relu     |    36        adam    |
+   9    | 0.98940003 | 56.671873  |      43         7          relu     |      18         3          relu     |     154          tanh     |     146        sigmoid    |    42        adam    |
+   10   | 0.98799998 | 53.187532  |      82         3          tanh     |      58         5          relu     |     181          tanh     |     101          relu     |    81        adam    |
+   11   | 0.98769999 | 48.343781  |      57         5          tanh     |      16         5          relu     |     185          relu     |     197          relu     |    50        adam    |
+   12   | 0.99019998 | 223.65622  |      92         3          relu     |      25         7          relu     |     200          relu     |     200        sigmoid    |    10        adam    |
+   13   |   0.9874   | 76.671843  |      54         7          relu     |      90         7          relu     |      92          relu     |     162          relu     |    35        adam    |
+   14   | 0.98890001 | 116.10938  |      72         3          tanh     |      99         5          relu     |     200          tanh     |      82        sigmoid    |    23        adam    |
+   15   | 0.98689997 | 95.687563  |      81         7          relu     |      43         5          relu     |      90          relu     |     140          tanh     |    26        adam    |
+   16   | 0.98869997 | 199.65619  |      64         7          tanh     |      50         5          relu     |     174        sigmoid    |      50          relu     |    10        adam    |
+   17   | 0.98100001 | 145.51562  |      94         3          tanh     |      30         5          tanh     |      82        sigmoid    |     119          tanh     |    17        adam    |
+   18   | 0.98479998 | 77.609408  |      63         7          tanh     |      61         5          relu     |     195          relu     |     156          relu     |    31        adam    |
+   19   |   0.9896   | 84.234372  |      60         5          tanh     |     100         5          relu     |     176          tanh     |      68          tanh     |    33        adam    |
+   20   | 0.98610002 | 62.062486  |      34         7          tanh     |      18         3          tanh     |     173        sigmoid    |      79          tanh     |    39        adam    |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total time: 13029.282601594925 s

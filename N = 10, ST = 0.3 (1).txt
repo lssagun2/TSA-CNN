@@ -1,0 +1,204 @@
+MNIST dataset
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Initial values:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    | 0.92869997 | 19.165995  |      37         5          tanh     |      91         5          tanh     |      97          relu     |      23          tanh     |    65        adam    |
+   2    | 0.92940003 | 16.025359  |      45         5          relu     |      89         3          tanh     |     198        sigmoid    |     164          relu     |    78        adam    |
+   3    |0.095799997 | 27.830941  |      77         3        sigmoid    |      42         5          relu     |     194        sigmoid    |      88          relu     |    73        adam    |
+   4    | 0.94489998 | 22.374074  |      87         7          relu     |      87         3          tanh     |     137        sigmoid    |     123        sigmoid    |    34        adam    |
+   5    |   0.1028   | 15.864166  |      62         7          relu     |      69         3        sigmoid    |     159          tanh     |     185        sigmoid    |    88        SGD     |
+   6    |   0.1135   |   25.259   |      66         5          tanh     |      44         7        sigmoid    |     171          tanh     |      4           relu     |    82        adam    |
+   7    |   0.1135   | 7.8242018  |      19         5          relu     |      29         3        sigmoid    |     153        sigmoid    |      86          relu     |    50        SGD     |
+   8    | 0.40900001 |  16.55335  |      60         7          tanh     |      79         3          tanh     |      69          relu     |      19          relu     |    82        SGD     |
+   9    | 0.54589999 | 31.998929  |      61         5          tanh     |      88         7          tanh     |     133          tanh     |      51        sigmoid    |    65        SGD     |
+   10   |   0.1135   | 37.936888  |      88         3        sigmoid    |      51         7        sigmoid    |     192          relu     |      41          relu     |    36        adam    |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 1:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    | 0.93089998 | 27.254084  |      53         5          tanh     |     100         5          tanh     |     123          relu     |      36          tanh     |    54        adam    |
+   2    | 0.92940003 | 16.025359  |      45         5          relu     |      89         3          tanh     |     198        sigmoid    |     164          relu     |    78        adam    |
+   3    |0.098200001 | 17.946621  |      73         3        sigmoid    |      4          5          relu     |     180        sigmoid    |     118          relu     |    75        adam    |
+   4    | 0.96689999 | 43.535189  |     100         7          relu     |      88         7          tanh     |     139          tanh     |     163          relu     |    14        adam    |
+   5    |   0.1028   | 15.864166  |      62         7          relu     |      69         3        sigmoid    |     159          tanh     |     185        sigmoid    |    88        SGD     |
+   6    |   0.1135   |   25.259   |      66         5          tanh     |      44         7        sigmoid    |     171          tanh     |      4           relu     |    82        adam    |
+   7    |   0.1135   | 7.8242018  |      19         5          relu     |      29         3        sigmoid    |     153        sigmoid    |      86          relu     |    50        SGD     |
+   8    | 0.91420001 | 15.882908  |      52         7          tanh     |      84         3          tanh     |     138          tanh     |      19          relu     |    82        adam    |
+   9    | 0.54589999 | 31.998929  |      61         5          tanh     |      88         7          tanh     |     133          tanh     |      51        sigmoid    |    65        SGD     |
+   10   | 0.94260001 | 47.364016  |     100         3          relu     |      95         5        sigmoid    |     200          relu     |      43          tanh     |    28        adam    |
+Time elapsed: 612.2262690067291 seconds
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 2:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    |   0.9314   | 16.787799  |      31         5          tanh     |     100         5          tanh     |     123          relu     |      36          tanh     |    64        adam    |
+   2    | 0.93000001 | 22.873704  |      45         7          relu     |      89         7          tanh     |     198        sigmoid    |     163          relu     |    78        adam    |
+   3    | 0.54909998 | 8.8530371  |      20         3        sigmoid    |      41         3          relu     |     188        sigmoid    |     118          tanh     |    97        adam    |
+   4    | 0.96689999 | 43.535189  |     100         7          relu     |      88         7          tanh     |     139          tanh     |     163          relu     |    14        adam    |
+   5    | 0.15889999 | 22.929032  |      72         7          relu     |      66         5          relu     |     158          tanh     |     200        sigmoid    |    91        SGD     |
+   6    | 0.51840001 | 40.916578  |     100         3          tanh     |      46         7          tanh     |     170          tanh     |      4           tanh     |    32        SGD     |
+   7    |   0.1135   | 7.8242018  |      19         5          relu     |      29         3        sigmoid    |     153        sigmoid    |      86          relu     |    50        SGD     |
+   8    | 0.92439997 | 26.928985  |      57         5          tanh     |      85         5          tanh     |     133          relu     |      40        sigmoid    |    90        adam    |
+   9    | 0.54640001 |   24.631   |      61         7          tanh     |      58         7          tanh     |     123          relu     |      30        sigmoid    |    37        SGD     |
+   10   | 0.94260001 | 47.364016  |     100         3          relu     |      95         5        sigmoid    |     200          relu     |      43          tanh     |    28        adam    |
+Time elapsed: 904.781485080719 seconds
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 3:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    |   0.9314   | 16.787799  |      31         5          tanh     |     100         5          tanh     |     123          relu     |      36          tanh     |    64        adam    |
+   2    | 0.93000001 | 22.873704  |      45         7          relu     |      89         7          tanh     |     198        sigmoid    |     163          relu     |    78        adam    |
+   3    | 0.87269998 | 17.443978  |      78         3          relu     |      38         3        sigmoid    |     198          relu     |     144          tanh     |   100        adam    |
+   4    | 0.96689999 | 43.535189  |     100         7          relu     |      88         7          tanh     |     139          tanh     |     163          relu     |    14        adam    |
+   5    | 0.48930001 | 26.895886  |      72         7          tanh     |      64         7          relu     |     158          tanh     |     200        sigmoid    |    41        SGD     |
+   6    | 0.51840001 | 40.916578  |     100         3          tanh     |      46         7          tanh     |     170          tanh     |      4           tanh     |    32        SGD     |
+   7    |   0.1135   | 7.8242018  |      19         5          relu     |      29         3        sigmoid    |     153        sigmoid    |      86          relu     |    50        SGD     |
+   8    | 0.94459999 | 24.553681  |      92         7          tanh     |     100         3          relu     |     143          tanh     |      69        sigmoid    |    95        adam    |
+   9    |   0.5984   | 16.265815  |      38         7          tanh     |      66         7          tanh     |     124          relu     |      30        sigmoid    |    37        SGD     |
+   10   | 0.94260001 | 47.364016  |     100         3          relu     |      95         5        sigmoid    |     200          relu     |      43          tanh     |    28        adam    |
+Time elapsed: 1285.3580329418182 seconds
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 4:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    |   0.9314   | 16.787799  |      31         5          tanh     |     100         5          tanh     |     123          relu     |      36          tanh     |    64        adam    |
+   2    | 0.93000001 | 22.873704  |      45         7          relu     |      89         7          tanh     |     198        sigmoid    |     163          relu     |    78        adam    |
+   3    | 0.93049997 | 16.828706  |      80         3          relu     |      28         3        sigmoid    |     196        sigmoid    |     129          relu     |    21        adam    |
+   4    | 0.96689999 | 43.535189  |     100         7          relu     |      88         7          tanh     |     139          tanh     |     163          relu     |    14        adam    |
+   5    | 0.56870002 | 31.992067  |      72         7          tanh     |      87         7          tanh     |     158          tanh     |     200        sigmoid    |    41        SGD     |
+   6    | 0.51840001 | 40.916578  |     100         3          tanh     |      46         7          tanh     |     170          tanh     |      4           tanh     |    32        SGD     |
+   7    |   0.1135   | 7.8242018  |      19         5          relu     |      29         3        sigmoid    |     153        sigmoid    |      86          relu     |    50        SGD     |
+   8    | 0.94459999 | 24.553681  |      92         7          tanh     |     100         3          relu     |     143          tanh     |      69        sigmoid    |    95        adam    |
+   9    |   0.5984   | 16.265815  |      38         7          tanh     |      66         7          tanh     |     124          relu     |      30        sigmoid    |    37        SGD     |
+   10   | 0.94260001 | 47.364016  |     100         3          relu     |      95         5        sigmoid    |     200          relu     |      43          tanh     |    28        adam    |
+Time elapsed: 1568.8755321502686 seconds
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 5:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    | 0.94859999 | 7.7559769  |      4          5          tanh     |     100         7          relu     |     146          tanh     |      71          tanh     |    57        adam    |
+   2    | 0.94520003 | 18.060096  |      57         7          relu     |      90         3          tanh     |     200        sigmoid    |      83          relu     |    34        adam    |
+   3    | 0.93049997 | 16.828706  |      80         3          relu     |      28         3        sigmoid    |     196        sigmoid    |     129          relu     |    21        adam    |
+   4    | 0.96689999 | 43.535189  |     100         7          relu     |      88         7          tanh     |     139          tanh     |     163          relu     |    14        adam    |
+   5    | 0.79149997 | 40.069868  |      72         3          tanh     |      84         7          relu     |     157          tanh     |     200          relu     |    47        SGD     |
+   6    | 0.92390001 | 18.086422  |      43         3          tanh     |      40         7          tanh     |     157          tanh     |      28          tanh     |    49        adam    |
+   7    |   0.1135   | 7.8242018  |      19         5          relu     |      29         3        sigmoid    |     153        sigmoid    |      86          relu     |    50        SGD     |
+   8    | 0.95109999 | 24.414962  |      92         7          tanh     |     100         3          relu     |     145          tanh     |      69          relu     |   100        adam    |
+   9    |   0.5984   | 16.265815  |      38         7          tanh     |      66         7          tanh     |     124          relu     |      30        sigmoid    |    37        SGD     |
+   10   |   0.9612   | 51.960009  |      93         5          relu     |      95         7        sigmoid    |     157          tanh     |      26          tanh     |    10        adam    |
+Time elapsed: 2011.5888588428497 seconds
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 6:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    | 0.94859999 | 7.7559769  |      4          5          tanh     |     100         7          relu     |     146          tanh     |      71          tanh     |    57        adam    |
+   2    | 0.96249998 | 20.654052  |      49         7          relu     |      87         5          tanh     |     198        sigmoid    |      86          relu     |    23        adam    |
+   3    | 0.93049997 | 16.828706  |      80         3          relu     |      28         3        sigmoid    |     196        sigmoid    |     129          relu     |    21        adam    |
+   4    | 0.96689999 | 43.535189  |     100         7          relu     |      88         7          tanh     |     139          tanh     |     163          relu     |    14        adam    |
+   5    | 0.79149997 | 40.069868  |      72         3          tanh     |      84         7          relu     |     157          tanh     |     200          relu     |    47        SGD     |
+   6    | 0.92390001 | 18.086422  |      43         3          tanh     |      40         7          tanh     |     157          tanh     |      28          tanh     |    49        adam    |
+   7    |   0.1135   | 7.8242018  |      19         5          relu     |      29         3        sigmoid    |     153        sigmoid    |      86          relu     |    50        SGD     |
+   8    | 0.95109999 | 24.414962  |      92         7          tanh     |     100         3          relu     |     145          tanh     |      69          relu     |   100        adam    |
+   9    | 0.78710002 | 14.745411  |      20         7          tanh     |      76         7          tanh     |     111          relu     |      40        sigmoid    |    10        SGD     |
+   10   |   0.9612   | 51.960009  |      93         5          relu     |      95         7        sigmoid    |     157          tanh     |      26          tanh     |    10        adam    |
+Time elapsed: 2301.3270280361176 seconds
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 7:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    | 0.94859999 | 7.7559769  |      4          5          tanh     |     100         7          relu     |     146          tanh     |      71          tanh     |    57        adam    |
+   2    | 0.96249998 | 20.654052  |      49         7          relu     |      87         5          tanh     |     198        sigmoid    |      86          relu     |    23        adam    |
+   3    | 0.93180001 | 24.654831  |      73         3          relu     |      35         5        sigmoid    |     200        sigmoid    |      71          tanh     |    33        adam    |
+   4    | 0.96689999 | 43.535189  |     100         7          relu     |      88         7          tanh     |     139          tanh     |     163          relu     |    14        adam    |
+   5    |   0.8484   | 41.143696  |      72         3          tanh     |      82         7          tanh     |     146          tanh     |     200          relu     |    36        SGD     |
+   6    | 0.92390001 | 18.086422  |      43         3          tanh     |      40         7          tanh     |     157          tanh     |      28          tanh     |    49        adam    |
+   7    |   0.1135   | 7.8242018  |      19         5          relu     |      29         3        sigmoid    |     153        sigmoid    |      86          relu     |    50        SGD     |
+   8    | 0.95249999 | 19.242066  |      46         7          tanh     |     100         5          relu     |     147          tanh     |      52        sigmoid    |    78        adam    |
+   9    | 0.78710002 | 14.745411  |      20         7          tanh     |      76         7          tanh     |     111          relu     |      40        sigmoid    |    10        SGD     |
+   10   |   0.9612   | 51.960009  |      93         5          relu     |      95         7        sigmoid    |     157          tanh     |      26          tanh     |    10        adam    |
+Time elapsed: 2678.1164197921753 seconds
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 8:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    | 0.94859999 | 7.7559769  |      4          5          tanh     |     100         7          relu     |     146          tanh     |      71          tanh     |    57        adam    |
+   2    | 0.96249998 | 20.654052  |      49         7          relu     |      87         5          tanh     |     198        sigmoid    |      86          relu     |    23        adam    |
+   3    | 0.95829999 |  36.71341  |      67         3          relu     |      87         5          relu     |     193        sigmoid    |      89          relu     |    26        adam    |
+   4    | 0.96689999 | 43.535189  |     100         7          relu     |      88         7          tanh     |     139          tanh     |     163          relu     |    14        adam    |
+   5    | 0.86589998 | 39.383009  |      76         3          tanh     |      80         7          tanh     |     178          tanh     |     200          relu     |    27        SGD     |
+   6    | 0.95420003 | 33.053568  |      78         3          tanh     |      30         7          relu     |     154          tanh     |      34          tanh     |    10        adam    |
+   7    |   0.1135   | 7.8242018  |      19         5          relu     |      29         3        sigmoid    |     153        sigmoid    |      86          relu     |    50        SGD     |
+   8    | 0.95249999 | 19.242066  |      46         7          tanh     |     100         5          relu     |     147          tanh     |      52        sigmoid    |    78        adam    |
+   9    | 0.89029998 |  11.57782  |      6          5          tanh     |      33         7          tanh     |      96          relu     |      36          relu     |    10        SGD     |
+   10   | 0.96359998 | 44.236741  |      78         3          relu     |      78         7          relu     |     111          relu     |      28          relu     |    10        adam    |
+Time elapsed: 3049.9826169013977 seconds
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 9:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    | 0.94859999 | 7.7559769  |      4          5          tanh     |     100         7          relu     |     146          tanh     |      71          tanh     |    57        adam    |
+   2    | 0.96249998 | 20.654052  |      49         7          relu     |      87         5          tanh     |     198        sigmoid    |      86          relu     |    23        adam    |
+   3    | 0.95829999 |  36.71341  |      67         3          relu     |      87         5          relu     |     193        sigmoid    |      89          relu     |    26        adam    |
+   4    | 0.96689999 | 43.535189  |     100         7          relu     |      88         7          tanh     |     139          tanh     |     163          relu     |    14        adam    |
+   5    | 0.86589998 | 39.383009  |      76         3          tanh     |      80         7          tanh     |     178          tanh     |     200          relu     |    27        SGD     |
+   6    | 0.95420003 | 33.053568  |      78         3          tanh     |      30         7          relu     |     154          tanh     |      34          tanh     |    10        adam    |
+   7    |   0.1135   | 7.8242018  |      19         5          relu     |      29         3        sigmoid    |     153        sigmoid    |      86          relu     |    50        SGD     |
+   8    | 0.95249999 | 19.242066  |      46         7          tanh     |     100         5          relu     |     147          tanh     |      52        sigmoid    |    78        adam    |
+   9    | 0.94370002 | 14.204071  |      16         5          tanh     |      58         7          tanh     |      94          relu     |      38          relu     |    10        adam    |
+   10   | 0.96359998 | 44.236741  |      78         3          relu     |      78         7          relu     |     111          relu     |      28          relu     |    10        adam    |
+Time elapsed: 3347.513105869293 seconds
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Iteration 10:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    | 0.94859999 | 7.7559769  |      4          5          tanh     |     100         7          relu     |     146          tanh     |      71          tanh     |    57        adam    |
+   2    | 0.96530002 | 14.709892  |      42         7          relu     |      81         3          relu     |     200          tanh     |     177          relu     |    25        adam    |
+   3    | 0.95829999 |  36.71341  |      67         3          relu     |      87         5          relu     |     193        sigmoid    |      89          relu     |    26        adam    |
+   4    | 0.96689999 | 43.535189  |     100         7          relu     |      88         7          tanh     |     139          tanh     |     163          relu     |    14        adam    |
+   5    | 0.87879997 | 45.165987  |      76         3          tanh     |      83         7          tanh     |     200          tanh     |     175          relu     |    22        SGD     |
+   6    | 0.95420003 | 33.053568  |      78         3          tanh     |      30         7          relu     |     154          tanh     |      34          tanh     |    10        adam    |
+   7    |   0.1135   | 7.8242018  |      19         5          relu     |      29         3        sigmoid    |     153        sigmoid    |      86          relu     |    50        SGD     |
+   8    | 0.95249999 | 19.242066  |      46         7          tanh     |     100         5          relu     |     147          tanh     |      52        sigmoid    |    78        adam    |
+   9    | 0.96270001 |  23.85981  |      61         7          relu     |      41         7          tanh     |      38        sigmoid    |      38        sigmoid    |    10        adam    |
+   10   | 0.96359998 | 44.236741  |      78         3          relu     |      78         7          relu     |     111          relu     |      28          relu     |    10        adam    |
+Time elapsed: 3751.98188495636 seconds
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Train for 5 epochs:
+        |         Results         |               C1 Layer              |               C3 Layer              |          F5 Layer         |          F6 Layer         |       General        |
+  Tree  |  Accuracy  |  Running   |  Number of    Kernel    Activation  |  Number of    Kernel    Activation  |  Number of    Activation  |  Number of    Activation  |  Batch    Optimizer  |
+        |            |    time    |   filters      size      function   |   filters      size      function   |   neurons      function   |   neurons      function   |   size               |
+   1    | 0.97469997 | 43.430265  |      4          5          tanh     |     100         7          relu     |     146          tanh     |      71          tanh     |    57        adam    |
+   2    | 0.97790003 | 59.209916  |      42         7          relu     |      81         3          relu     |     200          tanh     |     177          relu     |    25        adam    |
+   3    | 0.97229999 | 150.97824  |      67         3          relu     |      87         5          relu     |     193        sigmoid    |      89          relu     |    26        adam    |
+   4    | 0.97539997 |  191.6345  |     100         7          relu     |      88         7          tanh     |     139          tanh     |     163          relu     |    14        adam    |
+   5    | 0.93629998 | 193.31664  |      76         3          tanh     |      83         7          tanh     |     200          tanh     |     175          relu     |    22        SGD     |
+   6    | 0.96469998 | 132.40797  |      78         3          tanh     |      30         7          relu     |     154          tanh     |      34          tanh     |    10        adam    |
+   7    |   0.118    | 28.938188  |      19         5          relu     |      29         3        sigmoid    |     153        sigmoid    |      86          relu     |    50        SGD     |
+   8    | 0.97640002 | 76.248174  |      46         7          tanh     |     100         5          relu     |     147          tanh     |      52        sigmoid    |    78        adam    |
+   9    | 0.97619998 | 106.19822  |      61         7          relu     |      41         7          tanh     |      38        sigmoid    |      38        sigmoid    |    10        adam    |
+   10   | 0.98210001 | 196.89916  |      78         3          relu     |      78         7          relu     |     111          relu     |      28          relu     |    10        adam    |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Total time: 4931.407002925873 seconds

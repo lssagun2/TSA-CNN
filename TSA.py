@@ -1,3 +1,4 @@
+!pip install sigfig
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from tensorflow.keras import datasets, layers, models, losses
@@ -221,12 +222,12 @@ x_test = tf.expand_dims(x_test, axis=3, name=None)
 #start algorithm
 print("MNIST dataset")
 # print("CIFAR10 dataset")
-for trial in range(1, 4):
-	for ST in [0.1, 0.2, 0.3, 0.4, 0.5]:
-		population_size = 10
-		filename = f'ST = {ST}, N = {population_size} ({trial}).txt'
-		file = open(filename, "a")
-		file.write("MNIST dataset\n")
-		# file.write("CIFAR10 dataset\n")
-		file.close()
-		TSA(10, 0.1, 12, CNN, search_space, (x_train, y_train), (x_test, y_test), filename)
+for trial in range(1):
+    ST = 0.5
+    population_size = 40
+    filename = f'ST = {ST}, N = {population_size} ({trial + 1}).txt'
+    file = open(filename, "a")
+    file.write("MNIST dataset\n")
+    # file.write("CIFAR10 dataset\n")
+    file.close()
+    TSA(population_size, ST, 12, CNN, search_space, (x_train[0:12000], y_train[0:12000]), (x_test, y_test), filename)

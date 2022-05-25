@@ -27,7 +27,7 @@ def chooseBest(solutions, f, train_set, test_set, epochs, filename, verbose = Fa
 			displayTree(i+1, hyperparameters, *result, filename)
 		results.append(result)
 	values, times, val_history = zip(*results)
-	values, times = list(values), list(times)
+	values, times, val_history = list(values), list(times), list(val_history)
 	best_val = max(values)
 	best_index = values.index(best_val)
 	return values, times, val_history, best_index
